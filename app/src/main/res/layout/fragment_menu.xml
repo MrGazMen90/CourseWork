@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment">
+
+    <!---
+    <Button
+        android:id="@+id/abou_button"
+        android:text="О Нас"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/reee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="InvalidId,UselessParent" >
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="Погода в вашем городе"
+            android:layout_marginTop="30dp"
+
+            />
+
+        <EditText
+            android:id="@+id/user_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_marginTop="100sp"
+            android:layout_marginHorizontal="50sp"
+            android:hint="Введите город" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Узнать погоду"
+            android:layout_below="@id/user_field"
+            android:layout_marginTop="20sp"
+            android:layout_marginHorizontal="130sp"
+            />
+
+        <TextView
+            android:id="@+id/result_info"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/button"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
